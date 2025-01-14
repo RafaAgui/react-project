@@ -1,0 +1,11 @@
+:root {
+  background-color: black;
+}
+.card {
+  color: white;
+  display: flex;
+
+  &__header {
+    display: flex;
+  }
+}
