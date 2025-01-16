@@ -23,7 +23,10 @@ const buttonClass = isFollowing ? 'card__button--following' : ''
       </div>
     </header>
     <aside className='card__follow'>
-      <button className={`card__button ${buttonClass}`} type="button" onClick={handleClick}>{buttonText}</button>
+      <button className={`card__button ${buttonClass}`} type="button" onClick={handleClick}>
+        <span className='card__isFollowing'> {buttonText}</span>
+        <span className='card__stopFollowing'>Dejar de seguir</span>
+        </button>
     </aside>
   </article>
   )
